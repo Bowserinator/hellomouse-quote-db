@@ -7,7 +7,9 @@
     "start": "PORT=8201 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Bowserinator",
   "license": "MIT",
@@ -28,7 +30,8 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-mdc-web": "^0.17.0",
-    "winston": "^2.4.2"
+    "winston": "^2.4.2",
+    "snyk": "^1.189.0"
   },
   "proxy": "http://localhost:8200",
   "browserslist": [
@@ -36,5 +39,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
